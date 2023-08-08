@@ -1,0 +1,69 @@
+{
+	"source": {
+		"name": "settings",
+		"showName": false,
+		"instructions": "**Assume the following code snippet.**\n\n```python-hide-clipboard\nresponse = openai.Completion.create(\n  model=\"text-davinci-002\",\n  prompt=prompts,\n  top_p=1,\n  temperature=0.1,\n  max_tokens=50)\n```\n\n**What kind of result would you expect this code to produce?**",
+		"multipleResponse": false,
+		"isRandomized": true,
+		"answers": [
+			{
+				"_id": "dff6db64-bc2f-3dc0-f0d5-883e4b52aab7",
+				"correct": false,
+				"answer": "Creative response"
+			},
+			{
+				"_id": "65e162d0-f6b0-8921-b374-613bb2ed8b52",
+				"correct": true,
+				"answer": "Deterministic response"
+			},
+			{
+				"_id": "d5a037f4-91b1-486d-410d-abc11d1ecea8",
+				"correct": false,
+				"answer": "Neutral response"
+			}
+		],
+		"guidance": "The code sample would produce a more deterministic response. Think about the code sample as if it's a jukebox filled with songs. If you set the `top_p` value, it's like telling the jukebox to play any song, which could lead to a wide variety of tunes. This makes it pretty exciting because you never know what you'll hear next!\n\nBut if you use the `temperature` value, it's more like asking the jukebox to play mostly your favorite songs. It might mix in a few others, but it's mainly going to stick to the ones you know and love. This makes the playlist more predictable, or \"deterministic,\" because you have a pretty good idea of what songs will play.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				},
+				{
+					"name": "Content",
+					"value": "Settings"
+				},
+				{
+					"name": "Programming Language",
+					"value": "OpenAI"
+				},
+				{
+					"name": "Category",
+					"value": "Prompt Design"
+				}
+			],
+			"files": [
+				"setting.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "setting.py"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "5",
+		"learningObjectives": "SWBAT evaluate a code snippet to see if the result is creative or deterministic"
+	},
+	"taskId": "multiple-choice-3848935923",
+	"type": "multiple-choice"
+}

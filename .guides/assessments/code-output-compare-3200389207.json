@@ -1,0 +1,55 @@
+{
+	"type": "code-output-compare",
+	"taskId": "code-output-compare-3200389207",
+	"source": {
+		"name": "Function API call",
+		"showName": true,
+		"instructions": "When you are done testing your code, please use the button below to submit your code ",
+		"command": "python3 exerctest.py",
+		"preExecuteCommand": "",
+		"options": {
+			"timeout": 30,
+			"ignoreCase": true,
+			"ignoreWhitespaces": true,
+			"ignoreNewline": true,
+			"matchSubstring": false
+		},
+		"guidance": "```python\ndef generate_response(prompt, model):\n    response = openai.Completion.create(\n        engine=model,\n        prompt=prompt,\n        max_tokens=100,\n        n=1,\n        stop=None,\n        temperature=0.7,\n    )\n\n    return response.choices[0].text.strip()\n```\nHere learners are only instructed to give a working code model. Variables such as `temperature` and `n` are not needed to get the function working.\n`response = openai.Completion.create(...)` This line is where the API call to OpenAI is made. This function call is creating a \"completion\", which is an extended piece of text that continues from the prompt.The learner should just have both the prompt and the model given as function arguments pointing towards the right function arguments.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"points": 20,
+		"showExpectedAnswer": false,
+		"arePartialPointsAllowed": false,
+		"sequence": [
+			{
+				"arguments": "",
+				"input": "",
+				"output": "The file runs without errors.\nTest passed!\n",
+				"showFeedback": false,
+				"feedback": ""
+			}
+		],
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Standard Code Test"
+				}
+			],
+			"files": [
+				"exerc.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "exerc.py"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

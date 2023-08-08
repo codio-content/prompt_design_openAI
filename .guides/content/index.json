@@ -1,0 +1,24 @@
+{
+	"allowGuideClose": false,
+	"collapsedOnStart": false,
+	"hideBackToDashboard": false,
+	"hideMenu": false,
+	"hideSectionsToggle": false,
+	"lexikonTopic": "",
+	"order": [
+		"Learning-Objectives-ea75",
+		"Large-Language-Models-6b8a",
+		"Show-and-Tell-ba11",
+		"Provide-Quality-Data-20dd",
+		"Check-Your-Settings-7ba0",
+		"Classification-Design-d69b",
+		"Coding-Exercise-9f1c"
+	],
+	"protectLayout": false,
+	"scripts": [],
+	"suppressPageNumbering": true,
+	"theme": "light",
+	"title": "LLM'S",
+	"useMarkAsComplete": true,
+	"useSubmitButtons": true
+}
